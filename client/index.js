@@ -6,6 +6,7 @@ import SongList from './components/song-list';
 import App from './components/app';
 import {Router, Route, hashHistory, IndexRoute} from 'react-router';
 import SongCreate from './components/song-create';
+import './style/style.css';
 
 const client = new ApolloClient({});
 
