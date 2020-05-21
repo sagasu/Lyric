@@ -6,6 +6,8 @@ import SongList from './components/song-list';
 import App from './components/app';
 import {Router, Route, hashHistory, IndexRoute} from 'react-router';
 import SongCreate from './components/song-create';
+import SongDetails from './components/song-details';
+
 import './style/style.css';
 
 const client = new ApolloClient({});
@@ -17,6 +19,7 @@ const Root = () => {
         <Route path="/" component={App}>
           <IndexRoute component={SongList}></IndexRoute>
           <Route path="songs/new" component={SongCreate}></Route>
+          <Route path="songs/:id" component={SongDetails}></Route>
           
 
         </Route>
